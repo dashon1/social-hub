@@ -1,0 +1,25 @@
+/* Mobile-friendly: prevent text selection on interactive elements */
+button,
+a,
+[role="button"],
+.select-none,
+nav,
+label,
+[data-radix-collection-item] {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Keep content selectable */
+p, span, h1, h2, h3, h4, h5, h6, td, th, li, blockquote, pre, code,
+article, .selectable,
+textarea, input {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* Prevent rubber-banding globally */
+html, body, #root {
+  overscroll-behavior-y: none;
+}
