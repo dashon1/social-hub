@@ -17,7 +17,8 @@
  *       "HomePage": HomePage,
  *       "Dashboard": Dashboard,
  *       "Settings": Settings,
- *   }
+ *       "Login": Login,
+}
  *   
  *   export const pagesConfig = {
  *       mainPage: "HomePage",
@@ -29,11 +30,13 @@
  *   import Home from './pages/Home';
  *   import Settings from './pages/Settings';
  *   import __Layout from './Layout.jsx';
+import Login from './pages/Login';
  *
  *   export const PAGES = {
  *       "Home": Home,
  *       "Settings": Settings,
- *   }
+ *       "Login": Login,
+}
  *
  *   export const pagesConfig = {
  *       mainPage: "Home",
@@ -69,6 +72,7 @@ import Subscription from './pages/Subscription';
 import TeamManagement from './pages/TeamManagement';
 import Templates from './pages/Templates';
 import __Layout from './Layout.jsx';
+import Login from './pages/Login';
 
 
 export const PAGES = {
@@ -93,6 +97,7 @@ export const PAGES = {
     "Subscription": Subscription,
     "TeamManagement": TeamManagement,
     "Templates": Templates,
+    "Login": Login,
 }
 
 export const pagesConfig = {
